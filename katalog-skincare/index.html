@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowSkin | Katalog Skincare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand-wrap">
+            <img src="img/logo.jpg" alt="Rera Beauty logo" class="brand-logo" onclick="openImagePreview('img/logo.jpg', 'Rera Beauty logo')" role="button" tabindex="0">
+            <div>
+                <h1>Rera Beauty</h1>
+                <small>Beauty essentials</small>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#best-seller">Best Seller</a>
+            <a href="#new-in">New In</a>
+            <a href="#blog">Blog</a>
+        </nav>
+        <div class="header-actions">
+            <img src="img/logo%20instagram.jpg" alt="Instagram" class="social-btn" onclick="showInstagramLink()" role="button" tabindex="0" aria-label="Instagram">
+            <button class="nav-btn">Shop Now</button>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <span class="eyebrow">Skincare for your glow</span>
+            <h2>Perawatan kulit yang lembut, sehat, dan glowing.</h2>
+            <p>
+                Temukan produk skincare favorit dengan formulasi lembut untuk wajah cerah,
+                hydrated, dan tetap nyaman dipakai setiap hari.
+            </p>
+            <div class="hero-actions">
+                <button class="primary-btn">Belanja Sekarang</button>
+                <button class="secondary-btn">Lihat Koleksi</button>
+            </div>
+            <div class="stat-row">
+                <div>
+                    <strong>12k+</strong>
+                    <span>Customer</span>
+                </div>
+                <div>
+                    <strong>4.9/5</strong>
+                    <span>Rating</span>
+                </div>
+                <div>
+                    <strong>98%</strong>
+                    <span>Skin-safe</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="product-showcase">
+                <img src="img/glad2glow.jpg" alt="Skincare product collection">
+            </div>
+        </div>
+    </section>
+
+    <main class="catalog-section" id="catalog">
+        <section class="catalog-block full-catalog-block">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow pink">Popular Picks</span>
+                    <h3>Catalog Skincare Terbaik</h3>
+                </div>
+                <a href="#">Lihat Semua</a>
+            </div>
+
+            <div class="catalog-container">
+                <div class="product-card" onclick="openDetail(0)">
+                    <img src="img/camille.jpg" alt="Bundling Skincare Camille">
+                    <div class="product-info">
+                        <span class="product-brand">Camille</span>
+                        <h3>Bundling Skincare Camille</h3>
+                        <p class="price">Rp 414.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="openDetail(1)">
+                    <img src="img/daviena.jpg" alt="Davina Bundling Burgundy">
+                    <div class="product-info">
+                        <span class="product-brand">Davina</span>
+                        <h3>Davina Bundling Burgundy</h3>
+                        <p class="price">Rp 322.922</p>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="openDetail(2)">
+                    <img src="img/dyn.jpg" alt="Oh My Skin DYN Paket Perfect Glow Lengkap">
+                    <div class="product-info">
+                        <span class="product-brand">DYN</span>
+                        <h3>Oh My Skin DYN Paket Perfect Glow Lengkap</h3>
+                        <p class="price">Rp 283.360</p>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="openDetail(3)">
+                    <img src="img/facetology.jpg" alt="Bundling Skincare Facetology">
+                    <div class="product-info">
+                        <span class="product-brand">Facetology</span>
+                        <h3>Bundling Skincare Facetology</h3>
+                        <p class="price">Rp 368.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="openDetail(4)">
+                    <img src="img/finally%20found%20you.jpg" alt="Finally Found You Skincare Set">
+                    <div class="product-info">
+                        <span class="product-brand">Finally Found You</span>
+                        <h3>Finally Found You Skincare Set</h3>
+                        <p class="price">Rp 468.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="openDetail(5)">
+                    <img src="img/glad2glow.jpg" alt="Glad2glow Brightening Skincare Set">
+                    <div class="product-info">
+                        <span class="product-brand">Glad2Glow</span>
+                        <h3>Glad2glow Brightening Skincare Set</h3>
+                        <p class="price">Rp 250.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="openDetail(6)">
+                    <img src="img/gloglowing.jpg" alt="Glowglowing Skincare Set">
+                    <div class="product-info">
+                        <span class="product-brand">Glowglowing</span>
+                        <h3>Glowglowing Skincare Set</h3>
+                        <p class="price">Rp 365.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="openDetail(7)">
+                    <img src="img/scarlatte.jpg" alt="Scarlatte Skincare Set">
+                    <div class="product-info">
+                        <span class="product-brand">Scarlatte</span>
+                        <h3>Scarlatte Skincare Set</h3>
+                        <p class="price">Rp 350.000</p>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="openDetail(8)">
+                    <img src="img/skintific.jpg" alt="Skintific Skincare Set">
+                    <div class="product-info">
+                        <span class="product-brand">Skintific</span>
+                        <h3>Skintific Skincare Set</h3>
+                        <p class="price">Rp 536.000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-block" id="best-seller">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow pink">Best Seller</span>
+                    <h3>Produk Favorit</h3>
+                </div>
+                <a href="#">Lihat Semua</a>
+            </div>
+
+            <div class="catalog-container">
+                <div class="product-card" onclick="openDetail(2)">
+                    <img src="img/dyn.jpg" alt="Oh My Skin DYN Paket Perfect Glow Lengkap">
+                    <div class="product-info">
+                        <span class="product-brand">DYN</span>
+                        <h3>Oh My Skin DYN Paket Perfect Glow Lengkap</h3>
+                        <p class="price">Rp 283.360</p>
+                    </div>
+                </div>
+
+                <div class="product-card" onclick="openDetail(6)">
+                    <img src="img/gloglowing.jpg" alt="Glowglowing Skincare Set">
+                    <div class="product-info">
+                        <span class="product-brand">Glowglowing</span>
+                        <h3>Glowglowing Skincare Set</h3>
+                        <p class="price">Rp 365.000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-block" id="new-in">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow pink">New In</span>
+                    <h3>Produk Terbaru</h3>
+                </div>
+                <a href="#">Lihat Semua</a>
+            </div>
+
+            <div class="catalog-container single-feature">
+                <div class="product-card" onclick="openDetail(1)">
+                    <img src="img/daviena.jpg" alt="Davina Bundling Burgundy">
+                    <div class="product-info">
+                        <span class="product-brand">Davina</span>
+                        <h3>Davina Bundling Burgundy</h3>
+                        <p class="price">Rp 322.922</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="blog-section" id="blog">
+        <div class="section-heading blog-heading">
+            <div>
+                <span class="eyebrow pink">Beauty Journal</span>
+                <h3>Tips &amp; Trik Skincare</h3>
+            </div>
+        </div>
+
+        <div class="blog-grid">
+            <article class="blog-card">
+                <span>Skin Prep</span>
+                <h4>3 langkah dasar sebelum memakai skincare</h4>
+                <p>Mulai dari cleansing, toner, hingga sunscreen agar kulit tetap terjaga dan glowing.</p>
+            </article>
+            <article class="blog-card">
+                <span>Glow Routine</span>
+                <h4>Bagaimana cara memilih produk tepat untuk kulit kombinasi</h4>
+                <p>Pilih tekstur ringan, hidrasi seimbang, dan manfaat yang sesuai dengan kebutuhan kulitmu.</p>
+            </article>
+            <article class="blog-card">
+                <span>Weekly Care</span>
+                <h4>Rutinitas malam agar kulit lebih cerah</h4>
+                <p>Gunakan cleanser lembut, serum yang sesuai, dan moisturizer untuk hasil yang lebih maksimal.</p>
+            </article>
+        </div>
+    </section>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <button class="back-btn" onclick="closeDetail()">&larr; Kembali ke Katalog</button>
+            <div class="modal-body">
+                <img id="detailImg" src="" alt="Detail Produk">
+                <div class="detail-info">
+                    <h2 id="detailTitle">Nama Produk</h2>
+                    <p class="detail-price" id="detailPrice">Rp 0</p>
+                    <p class="detail-description" id="detailDesc">Deskripsi produk...</p>
+                    <button class="buy-btn">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="imagePreviewModal" class="modal image-preview-modal">
+        <div class="modal-content preview-content">
+            <button class="back-btn" onclick="closeImagePreview()">&larr; Tutup</button>
+            <img id="previewImage" src="" alt="Preview gambar" class="preview-image">
+            <p id="previewCaption" class="preview-caption"></p>
+        </div>
+    </div>
+
+    <div id="instagramModal" class="modal instagram-modal">
+        <div class="modal-content instagram-content">
+            <button class="back-btn" onclick="closeInstagramModal()">&larr; Tutup</button>
+            <p class="instagram-label">Instagram</p>
+            <p class="instagram-link">instagram.com</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
